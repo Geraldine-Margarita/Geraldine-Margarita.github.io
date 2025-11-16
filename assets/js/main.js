@@ -1,5 +1,5 @@
 const API_URL = 'https://mindicador.cl/api';
-const LOCAL_SERIES = 'https://geraldine-margarita.github.io/Prueba-Api/mindicador.json'; 
+const LOCAL_SERIES = 'https://geraldine-margarita.github.io/Prueba_Api/mindicador.json'; 
 
 const $ = s => document.querySelector(s);
 const montoInput = $('#monto');
@@ -107,4 +107,5 @@ return;
 const { labels, values } = prepararSerie(historial[moneda]);
 dibujarGrafico(labels, values, valorActual.nombre);
 });
+
 
