@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Conversor de monedas Nacional</title>
+<link rel="stylesheet" href="./assets/css/style.css" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<header>
+<h1>Conversor de Monedas</h1>
+</header>
+
+<main class="container">
+<aside class="card form-card">
+<h2>Pesos CLP</h2>
+<input id="monto" type="number" placeholder="Ingrese el monto en CLP" min="0" />
+
+<label for="moneda">Moneda a convertir:</label>
+<select id="moneda">
+<option value="">Seleccionar moneda</option>
+<option value="dolar">Dólar (USD)</option>
+<option value="euro">Euro (EUR)</option>
+</select>
+
+<button id="buscar">Buscar</button>
+
+<p id="resultado" class="resultado">...</p>
+<p id="error" class="error" aria-live="polite"></p>
+<p id="source" class="source" aria-live="polite"></p>
+</aside>
+
+<section class="card chart-card">
+<h3>Historial</h3>
+<canvas id="historialChart" width="800" height="300"></canvas>
+</section>
+</main>
+
+<footer class="footer-note">
+<p>Datos obtenidos de Pagina<a href="https://mindicador.cl" target="_blank" rel="noreferrer noopener">mindicador.cl</a>.
+Si la API no está disponible, se Utiliza un respaldo local.</p>
+</footer>
+
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
